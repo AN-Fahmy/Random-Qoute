@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Icon Title -->
+    <link href="image/images.png" rel="icon" type="image/png">
+    <!-- Animation Library CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- FontAwesome Library File -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Bootstrap Library File -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Style Css File -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Random Qoute</title>
+</head>
+<body class="overflow-x-hidden">
+
+    <div class="intro">
+        <div class="animate animate__animated animate__bounce">
+            <h1>Random Qoute</h1>
+        </div>
+    </div>
+
+    <div class="container text-start">
+        <div class="dark-mood mt-3">
+            <i class="sun fa-solid fa-sun fs-3"></i>
+            <i class="moon fa-solid fa-moon fs-3"></i>
+        </div>
+
+        <div class="content text-center animate__animated animate__tada">
+            <h1>Qoute Of The Day</h1>
+            <p>Press The Button Below to Recieve A Random Quoute</p>
+            <button class="new-qoute btn border border-1">New Qoute</button>
+        </div>
+
+        <div class="row parent-qoute mt-3 p-3 pb-0 rounded-3 animate__animated animate__rubberBand">
+
+            <div class="col-12 d-flex justify-content-between">
+                <div class="head">
+                    <div class="row d-flex justify-content-start align-items-center">
+                        <div class="col-2 head-img">
+                            <img class="w-100 rounded-circle" src="image/1_New1.jpg" alt="">
+                        </div>
+                        <div class="col-10 p-0 head-name text-start">
+                            <h5 class="name m-0">Adel Nasser</h5>
+                            <span id="date"></span>
+                            <span><i class="fa-solid fa-earth-americas"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="setting-icon">
+                    <i class="fa-solid fa-ellipsis-vertical fs-5"></i>
+                </div>
+            </div>
+
+            <div class="box col-12 my-3 py-0" id="qouteDisplay"></div>
+
+            <div class="col-12">
+                <div class="active py-1 px-0">
+                    <div class="icon-active">
+                        <i class="fa-brands fa-gratipay text-danger rounded-circle"></i>
+                        <i class="fa-solid fa-face-kiss-wink-heart text-warning"></i>
+                        <span>John Deo And 15k Other</span>
+                    </div>
+                </div>
+
+                <div class="icons row border-1 border-top">
+                    <div class="col-3 icnoe-social py-2 d-flex justify-content-start align-items-center gap-1">
+                        <i class="fa-regular fa-thumbs-up"></i>
+                        <span>Like</span>
+                    </div>
+
+                    <div class="col-3 icnoe-social py-2 d-flex justify-content-start align-items-center gap-1">
+                        <i class="fa-regular fa-comment"></i>
+                        <span>Comment</span>
+                    </div>
+
+                    <div class="col-3 icnoe-social py-2 d-flex justify-content-start align-items-center gap-1">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>Send</span>
+                    </div>
+
+                    <div class="col-3 icnoe-social py-2 d-flex justify-content-start align-items-center gap-1">
+                        <i class="fa-solid fa-share"></i>
+                        <span>Share</span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="remove text-center mt-3">
+            <button class="btn border-1 border">Remove Post</button>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

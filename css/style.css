@@ -1,0 +1,141 @@
+:root{
+    --bg-black:#000;
+    --bg-white: #fff;
+    --text-white : #fff;
+    --text-black : #000;
+    --hover-color: #eee;
+}
+/* Scroll Style */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+/* Scroll Style */
+*{
+    transition: all .3s;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.moon{
+    display: none;
+    color: #fff;
+}
+.dark{
+    background-color: var(--bg-black);
+}
+.white{
+    background-color: var(--bg-white);
+}
+.content{
+    color: var(--text-black);
+}
+.content button{
+    color: var(--text-black);
+    border-color: var(--text-black);
+}
+.content button:hover, .remove button:hover{
+    background-color: var(--text-black);
+    color: var(--text-white);
+}
+.parent-qoute {
+    display: none;
+}
+.parent-qoute > div > div{
+    transition: all .1s;
+    color: var(--text-black);
+}
+.box{
+    color: var(--text-black);
+    font-size: 18px;
+}
+.icnoe-social, i,.icon-active span{
+    cursor: pointer;
+}
+.icnoe-social:hover{
+    background-color: var(--hover-color);
+}
+.icon-active i ,.icon-active span{
+    font-size: 14px;
+}
+@media (max-width:400px) {
+    .icnoe-social i,.icnoe-social span{
+        font-size: 12px;
+    }  
+    .icon-active i ,.icon-active span{
+        font-size: 12px;
+    }
+}
+@media (max-width:320px) {
+    .icnoe-social i,.icnoe-social span{
+        font-size: 10px;
+    }  
+    .icon-active i ,.icon-active span{
+        font-size: 10px;
+    }
+}
+.remove{
+    opacity: 0;
+}
+.remove button{
+    color: var(--text-black);
+}
+
+.intro{
+    background-color: var(--bg-black);
+    padding: 10px;
+}
+.animate{
+    font-family: "Briem Hand", cursive;
+    color: #fff;
+    position: relative;
+    animation: moving 5s alternate forwards infinite ease-in-out;
+}
+@keyframes moving {
+    0%{
+        left: 17%;
+        top: 0;
+    }
+    10%{
+        top: 10px;
+    }
+    20%{
+        top:-5px;
+    }
+    30%{
+        top: 10px;
+    }
+    40%{
+        top:-5px;
+    }
+    50%{
+        top: 10px;
+    }
+    60%{
+        top:-5px;
+    }
+    70%{
+        top: 10px;
+    }
+    80%{
+        top:-5px;
+    }
+    90%{
+        top: 10px;
+    }
+    100%{
+        left: 60%;
+        top:-5px;
+    }
+}
